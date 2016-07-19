@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Android by itself is great, but NOTHING is better than unlocked Android. What do I mean by "unlocked android"? I mean rooted, unlocked bootloader, and a custom ROM. With all of these you can do so much more with your already amazing device. With our guide, made to be easy for anyone, you can unlock your devices true potential.</string>
+    <string name="app_name">Unlock Android</string>
+	<string name="banner_ad_unit_id">ca-app-pub-5164171001589422/2057833399</string>
+	<string name="warning">I AM NOT LIABLE FOR YOUR DEVICE GETTING BRICKED, YOUR MARRIGE FAILING BECAUSE YOUR PHONE NEVER REMINDED YOU WISH YOUR WIFE A HAPPY BIRTHDAY, OR THERMONUCLEAR WAR WITH ALIENS. EVERYTHING YOU DO IS YOUR RESPONSIBILITY. CONTINUE AT YOUR OWN RISK.</string>
+	<string name="preTitle">What you need:</string>
+	<string name="pre">
+		"1) Android device running 3.0 or newer" \n
+		"2) Windows PC" \n
+		"3) ADB and Fastboot files and knowledge" \n
+		"4) Custom Recovery compatible with your device" \n
+		"5) Flashable Superuser zip" \n
+		"6) Custom ROM compatible with your device" \n
+	</string>
+	<string name="rootTitle">How To Root Your Android Device</string>
+	<string name="root">There are multiple ways to root Android. For devices running Android 4.2.2 and below can be rooted simply by downloading SuperSU from the Play Store and clicking a button. There are also other rooting apps on the internet that are compatible with certain devices. If you have a newer device, you can use a rooting program on your PC, such as One-Click Root. The best way is to unlock the bootloader and flash a Superuser zip. This can be accomplished by ensuring your device has ADB debugging enabled, connecting your device to your PC, opening a command prompt where the ADB and Fastboot files are located. Type in "adb devices" to make sure everything is working right. It should show a serial number and say device. If it does, type "adb reboot bootloader". This next part is different based on who makes the device. Most use the code "fastboot oem unlock". If it doesn\'t work, you\'ll have to look it up. Your device should show a screen warning you. Use your volume buttons to highlight "Yes" and press the power button. Your device will now reboot and reset itself for security reasons. After you set it back up, enable ADB debugging again, reboot it to the bootloader, and flash your recovery. Type in "fastboot flash recovery [location of the .img recovery file]". When it\'s done, type "fastboot reboot-recovery" and it should boot into your mew custom recovery. Now, click reboot and it should ask if you want to root your device. Select yes and continue. When it reboots, download SuperSU from the Play Store and you\'ll be rooted!</string>
+	<string name="romTitle">How To Flash A ROM</string>
+	<string name="rom">If you read on how to root, you\'ve already got an unlocked bootloader and custom recovery. If not, go back and read it. You should also have your ROM file and GApps if needed. If they\'re on your computer, move them to your phone. Now, with your phone connected to your computer, type in the command prompt "adb reboot recovery". You\'ll need to backup your device if anything happens. Click on "Backup/Restore", then "Backup to Sdcard". Let it run and when it\'s done go back and factory reset your device. When that\'s done, click on "Install zip from sdcard" or "Install" depending of the recovery you chose. Navigate to the directory with your ROM and GApps. Select the ROM and confirm the installation. Do the same with the GApps. When they\'ve finished, reboot and set your device back up. Now you\'re done! It may take up to ten minutes to boot up. If it takes longer than that, use your devices button combination to go back to recovery and restore your device with the backup you made earlier.</string>
+	<string name="aboutTitle">Octane Development</string>
+	<string name="about">is a small company run out of a small town in Pennsylvania. Currently, there is only one member in the company, who is only 15. I have been making apps since 2012 and currently have millions of downloads on my apps. Thank you for downloading my apps and supporting my dream. &#x1f60a;</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:padding="16dp"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+
+		<com.google.android.gms.ads.AdView
+			android:id="@+id/adView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			ads:adSize="BANNER"
+			ads:adUnitId="@string/banner_ad_unit_id">
+		</com.google.android.gms.ads.AdView>
+		
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="40sp"
+			android:text="@string/warning" />
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="35sp"
+			android:text="@string/rootTitle" />
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="25sp"
+			android:text="@string/root" />
+		
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="35sp"
+			android:text="@string/romTitle" />
+		
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="25sp"
+			android:text="@string/rom" />
+
+    </LinearLayout>
+</ScrollView>

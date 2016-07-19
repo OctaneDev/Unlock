@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bigtooth.apps.unlockandroid">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" android:required="true" />
+	<uses-permission android:name="android.permission.INTERNET" android:required="true" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+		android:theme="@style/AppTheme" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".MainActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+			android:label="Prerequisites"
+			android:name=".Pre"
+			android:parentActivityName="com.bigtooth.apps.unlockandroid.MainActivity" >
+			<!-- Parent activity meta-data to support 4.0 and lower -->
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.bigtooth.apps.unlockandroid.MainActivity" />
+		</activity>
+		<activity
+			android:label="How It's Done"
+			android:name=".How"
+			android:parentActivityName="com.bigtooth.apps.unlockandroid.MainActivity" >
+			<!-- Parent activity meta-data to support 4.0 and lower -->
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.bigtooth.apps.unlockandroid.MainActivity" />
+		</activity>
+		<activity
+			android:label="About the Developers"
+			android:name=".About"
+			android:parentActivityName="com.bigtooth.apps.unlockandroid.MainActivity" >
+			<!-- Parent activity meta-data to support 4.0 and lower -->
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.bigtooth.apps.unlockandroid.MainActivity" />
+		</activity>
+    </application>
+
+</manifest>
